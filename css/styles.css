@@ -481,17 +481,20 @@ letter-spacing: 0.96px;
 
 .check-icon{
   display: inline-block;
+ 
   width: 15px;
   height: 15px;
   border: 2px solid var(--first-color-text);
   border-radius: 4px;
-  background-image: url('../img/icon-check.svg');
+  background-size: contain;
+  background-image: url('../img/icon-check3.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
  
 .check-input:checked ~ .check-icon{
   background-color: var(--accent-color);
   border: 0;
-  background-size: contain;
 }
 
 /* Main */
