@@ -343,9 +343,7 @@ width: 30px;
   cursor: pointer;
   transform: scale(1.1);
 }
-.form{
- 
-}
+
 .form-title{
   color:var(--first-color-text);
 text-align: center;
@@ -475,13 +473,17 @@ cursor: pointer;
 
 .form-input:focus{
   border-color: var(--accent-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .coment:focus{
   border-color: var(--accent-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:focus ~ .form-icon, .coment:focus ~ .form-icon{
+
   fill:var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .check-input{
   position: absolute;
@@ -503,10 +505,7 @@ cursor: pointer;
   height: 15px;
   border: 2px solid var(--first-color-text);
   border-radius: 4px;
-  background-size: contain;
-  background-image: url('../img/icon-check4.svg');
-  background-repeat: no-repeat;
-  background-position: center;
+  
 }
  
 .check-input:checked ~ .check-icon{
@@ -848,29 +847,71 @@ border-radius: 0px 0px 4px 4px;
 .tel-footer:focus {
   color: var(--accent-color);
 }
-
-/* .footer-link{
- margin-top: 10px;
-} */
-
-/* Portfolio Main */
-
-.main-portfolio {
-  background-color: var(--first-bg-color);
-  
+.footer-container-input{
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  align-self: center;
 }
-.portfolio.current::after{
+.footer-label{
   position: absolute;
-  content: '';
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  bottom:0;
-  left: 0;
-  background-color:var(--accent-color);
+  top:-33px;
+  color:var(--third-color-text);
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+}
 
-  
-  }
+.footer-input{
+  width: 358px;
+height: 50px;
+margin-right: 12px;
+flex-shrink: 0;
+border-radius: 4px;
+border: 1px solid rgba(255, 255, 255, 0.30);
+background: rgba(33, 150, 243, 0.00);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+padding: 15px 16px;
+color: var(--third-color-text);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.48px;
+outline:none;
+}
+
+.footer-button-icon{
+  margin-left: 10px;
+}
+.footer-input:focus{
+  border-color: var(--accent-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-button{
+  display: flex;
+  align-items: center;
+  width: 200px;
+height: 50px;
+padding-left: 28px;
+flex-shrink: 0;
+border: 0;
+border-radius: 4px;
+background: var(--accent-color);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+color: var(--third-color-text);
+text-align: center;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 30px; /* 187.5% */
+letter-spacing: 0.96px;
+cursor: pointer;
+}
+
 
 .footer-network{
   display: flex;
@@ -933,6 +974,29 @@ padding: 0;
 .footer-container{
   margin-left: 70px;
 }
+/* .footer-link{
+ margin-top: 10px;
+} */
+
+/* Portfolio Main */
+
+.main-portfolio {
+  background-color: var(--first-bg-color);
+  
+}
+.portfolio.current::after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  bottom:0;
+  left: 0;
+  background-color:var(--accent-color);
+
+  
+  }
+
 /* Фільтр робіт */
 
 .work-button {
