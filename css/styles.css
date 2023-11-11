@@ -518,7 +518,9 @@ cursor: pointer;
  border: 0;
   
 }
-
+/* .check-input:not(:checked) + .check-icon{
+  border: 2px solid var(--first-color-text);
+} 
 /* Main */
 .main {
   margin: 0;
