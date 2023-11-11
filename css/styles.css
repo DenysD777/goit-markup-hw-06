@@ -438,6 +438,9 @@ line-height: 24px;
 letter-spacing: 0.42px;
 
 }
+/* .form-label-check:focus-within{
+  border-color: var(--accent-color);
+} */
 .span-check{
   margin-left: 5px;
   color: var(--accent-color);
@@ -500,15 +503,16 @@ cursor: pointer;
 }
 
 .check-icon{
+  width: 15px;
+  height: 15px;
   margin-right: 7px;
   border: 2px solid var(--first-color-text);
   border-radius: 4px;
   
 }
-.check-input:focus + .check-icon{
-  
+ .check-input:focus + .check-icon{
   border-color: var(--accent-color);
- } 
+ }
 .check-input:checked + .check-icon{
   background-color: var(--accent-color);
  border: 0;
