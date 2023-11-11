@@ -501,20 +501,18 @@ cursor: pointer;
 
 .check-icon{
   margin-right: 7px;
-  width: 15px;
-  height: 15px;
   border: 2px solid var(--first-color-text);
   border-radius: 4px;
   
 }
 .check-input:focus + .check-icon{
-  background-color:var(--accent-color);
-  border: 0;
- }
-.check-input:checked ~ .check-icon{
-  background-color: var(--accent-color);
+  
   border-color: var(--accent-color);
-  background-origin: border-box;
+ } 
+.check-input:checked + .check-icon{
+  background-color: var(--accent-color);
+ border: 0;
+  
 }
 
 /* Main */
